@@ -1,0 +1,16 @@
+version: '2'
+services:
+  theconnect-mongodb:
+    image: mongo:4.0.12
+    ports:
+      - '27017:27017'
+    command: mongos --configdb theconnect-mongodb-config
+  theconnect-mongodb-node:
+    build:
+      context: .
+      dockerfile: mongodb/MongoDB.Dockerfile
+    command: mongod --replSet rs1 --noprealloc --smallfiles
+  theconnect-mongodb-config:
+    image: mongo:4.0.12
+    container_name: theconnect-mongodb-config
+    command: mongod --noprealloc --smallfiles --configsvr --dbpath /data/db

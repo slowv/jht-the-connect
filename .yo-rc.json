@@ -1,0 +1,42 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.vfin.theconnect",
+      "nativeLanguage": "vi"
+    },
+    "jhipsterVersion": "6.4.1",
+    "applicationType": "monolith",
+    "baseName": "theconnect",
+    "packageName": "com.vfin.theconnect",
+    "packageFolder": "com/vfin/theconnect",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": "spring-websocket",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZGMyOTk2YmVjOWUyODQzZTg0YmJkNTkxMGRjMGYxZWE3YWRiZWI0NDZiMmUzMjI3ZTIwOTk0NmU1OTMzYTkzNzU4YjFhZTBhZDY3ODY5OTg0Nzg3ZWZlMTdhOWMwZTYwNTYzM2ViZGZkMWIyYTExY2U1MmVkZjJkOGUyYTdmZDc=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "materia",
+    "clientThemeVariant": "primary",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "vi",
+    "languages": ["vi", "en"],
+    "blueprints": []
+  }
+}
