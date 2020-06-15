@@ -1,0 +1,535 @@
+
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>Socialite Network HTML Template</title>
+    <th:block th:include="fragment/layout :: HEAD"></th:block>
+
+
+</head>
+
+<body>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- sidebar -->
+        <th:block th:include="fragment/layout :: MAIN_SIDEBAR"></th:block>
+
+        <!-- header -->
+        <th:block th:include="fragment/layout :: HEADER"></th:block>
+
+
+        <!-- contents -->
+        <div class="main_content">
+
+            <div class="main_content_inner">
+
+
+                <h1> Market </h1>
+                <div class="uk-flex uk-flex-between">
+                    <nav class="responsive-tab style-1 mb-5">
+                        <ul>
+                            <li class="uk-active"><a href="#"> Suggestions </a></li>
+                            <li><a href="#"> Newest </a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="button primary small circle"> <i class="uil-plus"> </i> Create new </a>
+
+                </div>
+
+
+                <div class="uk-position-relative" uk-slider="finite: true">
+
+                    <div class="uk-slider-container pb-3">
+
+                        <ul class="uk-slider-items uk-child-width-1-5@m uk-child-width-1-3@s uk-grid-small uk-grid">
+
+                            <li>
+                                <a href="m-single-product.html">
+                                    <div class="market-list">
+                                        <div class="item-media"> <img src="assets/images/product/1.jpg" alt=""></div>
+
+                                        <div class="item-inner">
+                                            <div class="item-price"> 20$ </div>
+                                            <div class="item-title"> Brown headphones </div>
+                                            <div class="item-statistic">
+                                                <span> <span class="count">4</span> likes </span>
+                                                <span> <span class="count">106</span> views </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="m-single-product.html">
+                                    <div class="market-list">
+                                        <div class="item-media"> <img src="assets/images/product/13.jpg" alt=""></div>
+
+                                        <div class="item-inner">
+                                            <div class="item-price"> 12$ </div>
+                                            <div class="item-title"> Parfum Spray </div>
+                                            <div class="item-statistic">
+                                                <span> <span class="count">2</span> likes </span>
+                                                <span> <span class="count">286</span> views </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="m-single-product.html">
+                                    <div class="market-list">
+                                        <div class="item-media"> <img src="assets/images/product/2.jpg" alt=""></div>
+
+                                        <div class="item-inner">
+                                            <div class="item-price"> 23$ </div>
+                                            <div class="item-title"> Wireless headphones </div>
+                                            <div class="item-statistic">
+                                                <span> <span class="count">16</span> likes </span>
+                                                <span> <span class="count">202</span> views </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="m-single-product.html">
+                                    <div class="market-list">
+                                        <div class="item-media"> <img src="assets/images/product/16.jpg" alt=""></div>
+
+                                        <div class="item-inner">
+                                            <div class="item-price"> 60$ </div>
+                                            <div class="item-title"> Paper Coffee Cup </div>
+                                            <div class="item-statistic">
+                                                <span> <span class="count">12</span> likes </span>
+                                                <span> <span class="count">160</span> views </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="m-single-product.html">
+                                    <div class="market-list">
+                                        <div class="item-media"> <img src="assets/images/product/17.jpg" alt=""></div>
+
+                                        <div class="item-inner">
+                                            <div class="item-price"> 30$ </div>
+                                            <div class="item-title"> Sed diam nonummy</div>
+                                            <div class="item-statistic">
+                                                <span> <span class="count">9</span> likes </span>
+                                                <span> <span class="count">136</span> views </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="m-single-product.html">
+                                    <div class="market-list">
+                                        <div class="item-media"> <img src="assets/images/product/15.jpg" alt=""></div>
+
+                                        <div class="item-inner">
+                                            <div class="item-price"> 10$ </div>
+                                            <div class="item-title"> Herbal Shampoo </div>
+                                            <div class="item-statistic">
+                                                <span> <span class="count">2</span> likes </span>
+                                                <span> <span class="count">286</span> views </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <a class="uk-position-center-left-out uk-position-small uk-hidden-hover slidenav-prev" href="#"
+                            uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right-out uk-position-small uk-hidden-hover slidenav-next" href="#"
+                            uk-slider-item="next"></a>
+
+                    </div>
+
+                </div>
+
+
+                <hr class="my-2 my-sm-2">
+
+
+
+                <div class="section-small">
+                    <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+                        <div>
+                            <a href="m-single-product.html">
+                                <div class="uk-background-cover rounded p-5 uk-light uk-flex uk-flex-middle"
+                                    data-src="assets/images/product/7.jpg" uk-img>
+                                    <div class="uk-width-2-3@m">
+                                        <h2 class="mb-0">$120.99</h2>
+                                        <h4 class="my-2">Strawberries Fresh Ripe</h4>
+                                        <p> Eiusmod sit amet tempor incidunt sed diam nonummy nibh euismod</p>
+                                        <a href="#" class="button outline-white circle">Shop</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="m-single-product.html">
+                                <div class="uk-background-cover rounded p-5 uk-light uk-flex uk-flex-middle"
+                                    style="background-position-x: 52px;background-repeat: repeat;"
+                                    data-src="assets/images/product/2.jpg" uk-img>
+                                    <div class="uk-width-2-3@m">
+                                        <p class="uk-text-small uk-text-danger uk-text-uppercase uk-text-bold mb-0">
+                                            Limited
+                                            time
+                                            only</p>
+                                        <h4 class="uk-heading-small uk-text-bold my-2">50% OFF</h4>
+                                        <p>Eiusmod sit amet tempor incidunt sed diam nonummy nibh euismod !</p>
+                                        <a href="#" class="button white circle">Shop</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-header">
+                    <div class="section-header-left">
+                        <h3> Categories </h3>
+                    </div>
+                    <div class="section-header-right">
+                        <a href="#" class="see-all"> See all</a>
+                    </div>
+                </div>
+
+                <div class="uk-position-relative" uk-slider="finite: true">
+
+                    <div class="uk-slider-container pb-3">
+
+                        <ul
+                            class="uk-slider-items uk-child-width-1-6@m uk-child-width-1-3@s uk-child-width-1-2 uk-grid-small uk-grid">
+
+                            <li>
+
+                                <a href="#">
+                                    <div class="group-catagroy-card" data-src="assets/images/product/11.jpg" uk-img>
+                                        <div class="group-catagroy-card-content">
+                                            <h4> Shoes </h4>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="group-catagroy-card" data-src="assets/images/product/1.jpg" uk-img>
+                                        <div class="group-catagroy-card-content">
+                                            <h4> headphones </h4>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </li>
+                            <li>
+
+                                <a href="#">
+                                    <div class="group-catagroy-card" data-src="assets/images/product/7.jpg" uk-img>
+                                        <div class="group-catagroy-card-content">
+                                            <h4> Fruits </h4>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </li>
+                            <li>
+
+                                <a href="#">
+                                    <div class="group-catagroy-card" data-src="assets/images/product/4.jpg" uk-img>
+                                        <div class="group-catagroy-card-content">
+                                            <h4> Mobiles </h4>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </li>
+                            <li>
+
+                                <a href="#">
+                                    <div class="group-catagroy-card" data-src="assets/images/product/13.jpg" uk-img>
+                                        <div class="group-catagroy-card-content">
+                                            <h4> Parfums </h4>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </li>
+                            <li>
+
+                                <a href="#">
+                                    <div class="group-catagroy-card" data-src="assets/images/product/15.jpg" uk-img>
+                                        <div class="group-catagroy-card-content">
+                                            <h4> Oils </h4>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </li>
+                            <li>
+
+                                <a href="#">
+                                    <div class="group-catagroy-card" data-src="assets/images/product/3.jpg" uk-img>
+                                        <div class="group-catagroy-card-content">
+                                            <h4> Laptops </h4>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </li>
+                        </ul>
+
+                        <a class="uk-position-center-left-out uk-position-small uk-hidden-hover slidenav-prev" href="#"
+                            uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right-out uk-position-small uk-hidden-hover slidenav-next" href="#"
+                            uk-slider-item="next"></a>
+
+                    </div>
+                </div>
+
+                <hr class="my-3 my-sm-2">
+
+                <div uk-slider="finite: true">
+
+                    <div class="grid-slider-header">
+                        <div>
+                            <h3> Brand Collection </h3>
+                        </div>
+                        <div class="grid-slider-header-link">
+
+                            <a href="#" class="button transparent uk-visible@m"> View all </a>
+                            <a href="#" class="slide-nav-prev" uk-slider-item="previous"></a>
+                            <a href="#" class="slide-nav-next" uk-slider-item="next"></a>
+                        </div>
+                    </div>
+
+                    <ul class="uk-slider-items uk-child-width-1-5@m uk-child-width-1-3@s uk-grid-small uk-grid">
+
+                        <li>
+                            <a href="m-single-product.html">
+                                <div class="market-list">
+                                    <div class="item-media">
+                                        <img src="assets/images/product/12.jpg" alt="">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-price"> 20$ </div>
+                                        <div class="item-title"> Hermes Rivera </div>
+                                        <div class="item-statistic">
+                                            <span> <span class="count">24</span> likes </span>
+                                            <span> <span class="count">286</span> views </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="m-single-product.html">
+                                <div class="market-list">
+                                    <div class="item-media">
+                                        <img src="assets/images/product/15.jpg" alt="">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-price"> 17$ </div>
+                                        <div class="item-title"> Herbal Shampoo </div>
+                                        <div class="item-statistic">
+                                            <span> <span class="count">7</span> likes </span>
+                                            <span> <span class="count">286</span> views </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="m-single-product.html">
+                                <div class="market-list">
+                                    <div class="item-media">
+                                        <img src="assets/images/product/4.jpg" alt="">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-price"> 22$ </div>
+                                        <div class="item-title"> iPhone 7 unboxing </div>
+                                        <div class="item-statistic">
+                                            <span> <span class="count">12</span> likes </span>
+                                            <span> <span class="count">386</span> views </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="m-single-product.html">
+                                <div class="market-list">
+                                    <div class="item-media">
+                                        <img src="assets/images/product/14.jpg" alt="">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-price"> 20$ </div>
+                                        <div class="item-title"> Wood Chair </div>
+                                        <div class="item-statistic">
+                                            <span> <span class="count">2</span> likes </span>
+                                            <span> <span class="count">286</span> views </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="m-single-product.html">
+                                <div class="market-list">
+                                    <div class="item-media">
+                                        <img src="assets/images/product/11.jpg" alt="">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-price"> 42$ </div>
+                                        <div class="item-title"> Hermes Rivera</div>
+                                        <div class="item-statistic">
+                                            <span> <span class="count">2</span> likes </span>
+                                            <span> <span class="count">286</span> views </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="m-single-product.html">
+                                <div class="market-list">
+                                    <div class="item-media">
+                                        <img src="assets/images/product/9.jpg" alt="">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-price"> 20$ </div>
+                                        <div class="item-title"> Strawberries FreshRipe </div>
+                                        <div class="item-statistic">
+                                            <span> <span class="count">2</span> likes </span>
+                                            <span> <span class="count">286</span> views </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <hr class="my-3 my-sm-2">
+
+                <div uk-slider="finite: true">
+
+                    <div class="grid-slider-header">
+                        <div>
+                            <h3> Fresh Fruit </h3>
+                        </div>
+                        <div class="grid-slider-header-link">
+
+                            <a href="#" class="button transparent uk-visible@m"> View all </a>
+                            <a href="#" class="slide-nav-prev" uk-slider-item="previous"></a>
+                            <a href="#" class="slide-nav-next" uk-slider-item="next"></a>
+                        </div>
+                    </div>
+
+                    <ul class="uk-slider-items uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small uk-grid">
+
+                        <li>
+                            <a href="m-single-product.html">
+                                <div class="market-list">
+                                    <div class="item-media">
+                                        <img src="assets/images/product/6.jpg" alt="">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-price"> 42$ </div>
+                                        <div class="item-title"> Yogur tFruit Vanilla </div>
+                                        <div class="item-statistic">
+                                            <span> <i class="uil-thumbs-up"></i> <span class="count">40</span> likes
+                                            </span>
+                                            <span> <i class="uil-eye"></i> <span class="count">160</span> views </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="m-single-product.html">
+                                <div class="market-list">
+                                    <div class="item-media">
+                                        <img src="assets/images/product/7.jpg" alt="">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-price"> 35$ </div>
+                                        <div class="item-title"> Strawberries Fresh Ripe </div>
+                                        <div class="item-statistic">
+                                            <span> <i class="uil-thumbs-up"></i> <span class="count">2</span> likes
+                                            </span>
+                                            <span> <i class="uil-eye"></i> <span class="count">286</span> views </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="m-single-product.html">
+                                <div class="market-list">
+                                    <div class="item-media">
+                                        <img src="assets/images/product/8.jpg" alt="">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-price"> 29$ </div>
+                                        <div class="item-title"> Fruit Basket Grapes </div>
+                                        <div class="item-statistic">
+                                            <span> <i class="uil-thumbs-up"></i> <span class="count">2</span> likes
+                                            </span>
+                                            <span> <i class="uil-eye"></i> <span class="count">106</span> views </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="m-single-product.html">
+                                <div class="market-list">
+                                    <div class="item-media">
+                                        <img src="assets/images/product/9.jpg" alt="">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-price"> 20$ </div>
+                                        <div class="item-title"> Cocooil baby oil on desk </div>
+                                        <div class="item-statistic">
+                                            <span> <i class="uil-thumbs-up"></i> <span class="count">2</span> likes
+                                            </span>
+                                            <span> <i class="uil-eye"></i> <span class="count">286</span> views </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- For Night mode -->
+    <th:block th:include="fragment/layout :: JAVASCRIPT"></th:block>
+
+
+</body>
+
+</html>

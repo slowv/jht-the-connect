@@ -1,0 +1,46 @@
+{
+    "name": "Friend",
+    "fields": [
+        {
+            "fieldName": "dateIsFriend",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "FriendType",
+            "fieldValues": "REQUEST,FRIEND,BEST_FRIEND,FOLLOW,BLOCKED",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "accountTC",
+            "otherEntityRelationshipName": "friend",
+            "relationshipName": "sender",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "accountTC",
+            "otherEntityRelationshipName": "friend",
+            "relationshipName": "receiver",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20200614085800",
+    "javadoc": "The Friend entity.\\n@author A true hipster",
+    "entityTableName": "friend",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

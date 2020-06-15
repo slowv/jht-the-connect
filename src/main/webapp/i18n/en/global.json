@@ -7,6 +7,15 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
+        "country": "Country",
+        "city": "City",
+        "district": "District",
+        "address": "Address",
+        "userInfo": "User Info",
+        "accountInfo": "Account Info",
+        "accountTc": "Account TC",
+        "image": "Image",
+        "friend": "Friend",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

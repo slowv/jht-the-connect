@@ -1,0 +1,472 @@
+
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title th:text="#{chat.title}"></title>
+    <th:block th:include="fragment/layout :: HEAD"></th:block>
+
+
+</head>
+
+<body>
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="collapse-sidebar mobile-visible">
+
+        <!-- sidebar -->
+        <th:block th:include="fragment/layout :: MAIN_SIDEBAR"></th:block>
+
+        <!-- header -->
+        <th:block th:include="fragment/layout :: HEADER"></th:block>
+
+
+        <!-- contents -->
+        <div class="main_content">
+
+            <div class="main_content_inner pt-0" style="max-width: 1300px;">
+
+                <hr class="m-0">
+                <div class="uk-grid-collapse" uk-grid>
+                    <div class="uk-width-3-4@m">
+
+                        <div class="chats-container margin-top-0">
+
+                            <div class="chats-container-inner">
+
+                                <!-- chats -->
+                                <div class="chats-inbox">
+                                    <div class="chats-headline">
+                                        <div class="input-with-icon">
+                                            <input class="uk-input" type="text" placeholder="Search">
+                                        </div>
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <div class="message-avatar"><i
+                                                        class="status-icon status-online"></i><img
+                                                        src="assets/images/avatars/avatar-2.jpg" alt="" /></div>
+
+                                                <div class="message-by">
+                                                    <div class="message-by-headline">
+                                                        <h5>Jonathan Madano </h5>
+                                                        <span>4 hours ago</span>
+                                                    </div>
+                                                    <p>You: Yes, in an organization stature, this is a must</p>
+                                                    <span class="message-readed uil-check"> </span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="active-message">
+                                            <a href="#">
+                                                <div class="message-avatar"><i
+                                                        class="status-icon status-online"></i><img
+                                                        src="assets/images/avatars/avatar-2.jpg" alt="" /></div>
+
+                                                <div class="message-by">
+                                                    <div class="message-by-headline">
+                                                        <h5>Stella Johnson </h5>
+                                                        <span>Yesterday</span>
+                                                    </div>
+                                                    <p>What are you doing?</p>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <div class="message-avatar"><i
+                                                        class="status-icon status-offline"></i><img
+                                                        src="assets/images/avatars/avatar-5.jpg" alt="" /></div>
+
+                                                <div class="message-by">
+                                                    <div class="message-by-headline">
+                                                        <h5> Alex Dolgove</h5>
+                                                        <span>2 days ago</span>
+                                                    </div>
+                                                    <p>Hello, I want to talk about my project if you don't mind!</p>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <div class="message-avatar"><i
+                                                        class="status-icon status-offline"></i><img
+                                                        src="assets/images/avatars/avatar-4.jpg" alt="" /></div>
+
+                                                <div class="message-by">
+                                                    <div class="message-by-headline">
+                                                        <h5>Marcin Kowalski</h5>
+                                                        <span>2 days ago</span>
+                                                    </div>
+                                                    <p>Hello</p>
+                                                    <span class="message-readed uil-check"> </span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="active-message">
+                                            <a href="#">
+                                                <div class="message-avatar"><i
+                                                        class="status-icon status-online"></i><img
+                                                        src="assets/images/avatars/avatar-2.jpg" alt="" /></div>
+
+                                                <div class="message-by">
+                                                    <div class="message-by-headline">
+                                                        <h5>Adrian Mohani</h5>
+                                                        <span>Yesterday</span>
+                                                    </div>
+                                                    <p>How are you?</p>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <div class="message-avatar"><i
+                                                        class="status-icon status-offline"></i><img
+                                                        src="assets/images/avatars/avatar-2.jpg" alt="" /></div>
+
+                                                <div class="message-by">
+                                                    <div class="message-by-headline">
+                                                        <h5>Stella Johnson </h5>
+                                                        <span>Yesterday</span>
+                                                    </div>
+                                                    <p>Say hi to your new friend</p>
+                                                    <span class="message-readed uil-check"> </span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <div class="message-avatar"><i
+                                                        class="status-icon status-offline"></i><img
+                                                        src="assets/images/avatars/avatar-2.jpg" alt="" /></div>
+
+                                                <div class="message-by">
+                                                    <div class="message-by-headline">
+                                                        <h5>Alex Dolgove</h5>
+                                                        <span>Yesterday</span>
+                                                    </div>
+                                                    <p>Hi Tom! Hate to break it to you but I'm actually on vacation</p>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <div class="message-avatar"><i
+                                                        class="status-icon status-offline"></i><img
+                                                        src="assets/images/avatars/avatar-2.jpg" alt="" /></div>
+
+                                                <div class="message-by">
+                                                    <div class="message-by-headline">
+                                                        <h5>Adrian Mohani</h5>
+                                                        <span>Yesterday</span>
+                                                    </div>
+                                                    <p>You: Yes, in an organization stature, this is a must</p>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <div class="message-avatar"><i
+                                                        class="status-icon status-offline"></i><img
+                                                        src="assets/images/avatars/avatar-4.jpg" alt="" /></div>
+
+                                                <div class="message-by">
+                                                    <div class="message-by-headline">
+                                                        <h5>Jonathan Madano </h5>
+                                                        <span>2 days ago</span>
+                                                    </div>
+                                                    <p>Yes, I received payment. Thanks for cooperation!</p>
+                                                    <span class="message-readed uil-check"> </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- chats / End -->
+
+                                <!-- Message Content -->
+                                <div class="message-content">
+
+                                    <div class="chats-headline">
+
+                                        <div class="uk-flex">
+                                            <img src="assets/images/avatars/avatar-3.jpg" width="40px"
+                                                class="uk-border-circle" alt="">
+                                            <h4 class="ml-2"> Alex Dolgove <span>Online</span> </h4>
+                                        </div>
+
+                                        <div class="message-action">
+                                            <a href="#" uk-tooltip="filter">
+                                                <i class="uil-outgoing-call"></i>
+                                            </a>
+                                            <a href="#" uk-tooltip="filter">
+                                                <i class="uil-video"></i>
+                                            </a>
+                                            <a href="#" uk-tooltip="More">
+                                                <i class="uil-ellipsis-h"></i>
+                                            </a>
+                                            <div
+                                                uk-dropdown="pos: left ; mode: click ;animation: uk-animation-slide-bottom-small">
+                                                <ul class="uk-nav uk-dropdown-nav">
+                                                    <li><a href="#"> Refresh </a></li>
+                                                    <li><a href="#"> Manage</a></li>
+                                                    <li><a href="#"> Setting</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Message Content Inner -->
+                                    <div class="message-content-inner">
+
+                                        <!-- Time Sign -->
+                                        <div class="message-time-sign">
+                                            <span>28 June, 2018</span>
+                                        </div>
+
+                                        <div class="message-bubble me">
+                                            <div class="message-bubble-inner">
+                                                <div class="message-avatar"><img
+                                                        src="assets/images/avatars/avatar-1.jpg" alt="" />
+                                                </div>
+                                                <div class="message-text">
+                                                    <p>How likely are you to recommend our company
+                                                        to your friends and family?</p>
+                                                </div>
+                                            </div>
+                                            <div class="uk-clearfix"></div>
+                                        </div>
+
+                                        <div class="message-bubble">
+                                            <div class="message-bubble-inner">
+                                                <div class="message-avatar"><img
+                                                        src="assets/images/avatars/avatar-2.jpg" alt="" />
+                                                </div>
+                                                <div class="message-text">
+                                                    <p>Hey there, we’re just writing to let you know 👍</p>
+                                                </div>
+                                            </div>
+                                            <div class="uk-clearfix"></div>
+                                        </div>
+
+                                        <div class="message-bubble me">
+                                            <div class="message-bubble-inner">
+                                                <div class="message-avatar"><img
+                                                        src="assets/images/avatars/avatar-1.jpg" alt="" />
+                                                </div>
+                                                <div class="message-text">
+                                                    <p>Ok, Understood! 😉</p>
+                                                </div>
+                                            </div>
+                                            <div class="uk-clearfix"></div>
+                                        </div>
+
+
+                                        <!-- Time Sign -->
+                                        <div class="message-time-sign">
+                                            <span>Yesterday</span>
+                                        </div>
+
+                                        <div class="message-bubble me">
+                                            <div class="message-bubble-inner">
+                                                <div class="message-avatar"><img
+                                                        src="assets/images/avatars/avatar-1.jpg" alt="" />
+                                                </div>
+                                                <div class="message-text">
+                                                    <p> I just wanted to let you know You’ll receive notifications for
+                                                        all issues, pull requests!.</p>
+                                                </div>
+                                            </div>
+                                            <div class="uk-clearfix"></div>
+                                        </div>
+
+                                        <div class="message-bubble">
+                                            <div class="message-bubble-inner">
+                                                <div class="message-avatar"><img
+                                                        src="assets/images/avatars/avatar-2.jpg" alt="" />
+                                                </div>
+                                                <div class="message-text">
+                                                    <p>You were automatically subscribed
+                                                        because you’ve been given access to the repository 😎</p>
+                                                </div>
+                                            </div>
+                                            <div class="uk-clearfix"></div>
+                                        </div>
+
+                                        <div class="message-bubble me">
+                                            <div class="message-bubble-inner">
+                                                <div class="message-avatar"><img
+                                                        src="assets/images/avatars/avatar-1.jpg" alt="" />
+                                                </div>
+                                                <div class="message-text">
+                                                    <p>Ok But don't forget about last payment. 🙂</p>
+                                                </div>
+                                            </div>
+                                            <div class="uk-clearfix"></div>
+                                        </div>
+
+                                        <div class="message-bubble">
+                                            <div class="message-bubble-inner">
+                                                <div class="message-avatar"><img
+                                                        src="assets/images/avatars/avatar-2.jpg" alt="" />
+                                                </div>
+                                                <div class="message-text w-auto uk-flex"> Typing..
+                                                    <!-- Typing Indicator -->
+                                                    <div class="typing-indicator">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="uk-clearfix"></div>
+                                        </div>
+                                    </div>
+                                    <!-- Message Content Inner / End -->
+
+                                    <!-- Reply Area -->
+                                    <div class="message-reply">
+
+                                        <form class="uk-flex-middle uk-width-1-1" uk-grid>
+                                            <div class="uk-flex uk-flex-middle mr-3 uk-width-auto">
+                                                <a href="#" class="button primary mr-2" uk-tooltip="filter">
+                                                    <i class="uil-smile-wink"></i>
+                                                </a>
+                                                <a href="#" class="button primary" uk-tooltip="filter">
+                                                    <i class="uil-link-alt"></i>
+                                                </a>
+                                            </div>
+
+                                            <textarea class="uk-textarea uk-width-expand" rows="5"
+                                                placeholder="Your Message" data-autoresize></textarea>
+
+                                            <button type="submit" class="button primary uk-width-auto">
+                                                <i class="uil-plane"></i>
+                                            </button>
+
+                                        </form>
+
+                                    </div>
+
+                                    <!-- 
+                            <div class="message-reply">
+                                <textarea cols="1" rows="1" placeholder="Your Message" data-autoresize></textarea>
+                                <button class="btn primary ripple-effect">Send</button>
+                            </div>-->
+
+
+
+                                </div>
+                                <!-- Message Content -->
+
+                            </div>
+                        </div>
+                        <!-- chats Container / End -->
+
+
+                    </div>
+                    <div class="uk-width-1-4@m uk-visible@m">
+
+                        <div class="uk-padding pt-3 pr-0" uk-sticky="offset:60:bottom:true ; media : @m">
+
+                            <div class="uk-grid-small" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img src="assets/images/avatars/avatar-8.jpg" width="70" class="uk-border-circle"
+                                        alt="">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h4 class="mb-1"> Jonathan Madano </h4>
+                                    <p class="uk-text-small mb-2"> 2 days ago </p>
+                                    <a href="#" class="uk-text-small"> Veiw profile </a>
+                                </div>
+                            </div>
+
+                            <hr class="mt-3 mb-2">
+                            <p class="mb-0">Option</p>
+                            <ul class="dropdown-user-menu">
+                                <li><a href="#"> <i class="uil-user"></i> My Channal </a> </li>
+                                <li><a href="#"> <i class="uil-thumbs-up"></i> Liked Videos </a></li>
+                                <li><a href="#"> <i class="uil-cog"></i> Account Settings</a></li>
+                                <li><a href="#"> <i class="uil-sign-out-alt"></i>Sign Out</a> </li>
+                            </ul>
+
+                            <hr class="mt-3 mb-0">
+
+                            <div class="section-header">
+                                <div class="section-header-left">
+                                    <h3> Photos </h3>
+                                </div>
+                                <div class="section-header-right">
+                                    <a href="#" class="see-all text-primary"> See all</a>
+                                </div>
+                            </div>
+
+                            <div class="uk-child-width-1-3 uk-grid-collapse uk-overflow-hidden"
+                                style="border-radius: 16px;" uk-grid>
+                                <div> <a href="#">
+                                        <div class="photo-card xsmall" data-src="assets/images/post/img-1.jpg" uk-img>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div> <a href="#">
+                                        <div class="photo-card xsmall" data-src="assets/images/post/img-2.jpg" uk-img>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div> <a href="#">
+                                        <div class="photo-card xsmall" data-src="assets/images/post/img-3.jpg" uk-img>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div> <a href="#">
+                                        <div class="photo-card xsmall" data-src="assets/images/category/img6.jpg"
+                                            uk-img>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div> <a href="#">
+                                        <div class="photo-card xsmall" data-src="assets/images/category/img3.jpg"
+                                            uk-img>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div> <a href="#">
+                                        <div class="photo-card xsmall" data-src="assets/images/category/img5.jpg"
+                                            uk-img>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- For Night mode -->
+        <th:block th:include="fragment/layout :: JAVASCRIPT"></th:block>
+
+</body>
+
+</html>

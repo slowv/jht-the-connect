@@ -1,0 +1,28 @@
+{
+  "theconnectApp": {
+    "accountTC": {
+      "home": {
+        "title": "Account TCS",
+        "createLabel": "Thêm mới một Account TC",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Account TC",
+        "notFound": "No Account TCS found"
+      },
+      "created": "Một Account TC mới được tạo với định danh {{ param }}",
+      "updated": "Một Account TC cập nhật với định danh {{ param }}",
+      "deleted": "Một Account TC đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Account TC {{ id }}?"
+      },
+      "detail": {
+        "title": "Account TC"
+      },
+      "email": "Email",
+      "password": "Password",
+      "status": "Status",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "deletedAt": "Deleted At",
+      "accountInfo": "Account Info"
+    }
+  }
+}

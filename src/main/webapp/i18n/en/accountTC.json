@@ -1,0 +1,28 @@
+{
+  "theconnectApp": {
+    "accountTC": {
+      "home": {
+        "title": "Account TCS",
+        "createLabel": "Create a new Account TC",
+        "createOrEditLabel": "Create or edit a Account TC",
+        "notFound": "No Account TCS found"
+      },
+      "created": "A new Account TC is created with identifier {{ param }}",
+      "updated": "A Account TC is updated with identifier {{ param }}",
+      "deleted": "A Account TC is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Account TC {{ id }}?"
+      },
+      "detail": {
+        "title": "Account TC"
+      },
+      "email": "Email",
+      "password": "Password",
+      "status": "Status",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "deletedAt": "Deleted At",
+      "accountInfo": "Account Info"
+    }
+  }
+}

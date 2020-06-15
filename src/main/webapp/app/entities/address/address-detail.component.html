@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="address">
+            <h2><span jhiTranslate="theconnectApp.address.detail.title">Address</span> {{address.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="theconnectApp.address.location" [ngbTooltip]="'theconnectApp.address.help.location' | translate">Location</span></dt>
+                <dd>
+                    <span>{{address.location}}</span>
+                </dd>
+                <dt><span jhiTranslate="theconnectApp.address.district">District</span></dt>
+                <dd>
+                    <div *ngIf="address.districtId">
+                        <a [routerLink]="['/district', address.districtId, 'view']">{{address.districtId}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="theconnectApp.address.accountInfo">Account Info</span></dt>
+                <dd>
+                    <div *ngIf="address.accountInfoId">
+                        <a [routerLink]="['/account-info', address.accountInfoId, 'view']">{{address.accountInfoId}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/address', address.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

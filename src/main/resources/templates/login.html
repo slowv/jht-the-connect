@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title th:text="#{login.title}"></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Socialite is - Professional A unique and beautiful collection of UI elements">
+    <link rel="icon" href="../assets/images/favicon.png">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/night-mode.css">
+    <link rel="stylesheet" href="../assets/css/framework.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <!-- icons
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/icons.css">
+
+    <!-- Google font
+    ================================================== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+</head>
+<body>
+
+
+<!--    <div>TK:admin@gmail.com</div>-->
+<!--    <div>MK:admin</div>-->
+<div id="wrapper" class="login-background">
+
+    <div class="uk-container">
+
+        <div class="uk-grid login-grid">
+            <div class="uk-width-2-3@l uk-width-1-1@s uk-padding-remove logo-slogan">
+                <img src="../assets/images/logo.png" alt="login image" class="logo">
+            </div>
+
+            <div class="uk-width-1-3@l uk-width-1-1@s uk-padding-remove">
+
+                <div class="uk-section uk-flex uk-flex-middle uk-animation-fade login-form" uk-height-viewport>
+                    <div class="uk-width-1-1">
+                        <div class="uk-container">
+                            <div id="1" class="uk-grid-margin uk-grid-stack">
+                                <div id="2" class="uk-width-1-1@m">
+                                    <form class="uk-margin uk-width-large uk-margin-auto uk-card uk-card-default uk-card-body uk-box-shadow-large">
+                                        <ul class="uk-tab uk-flex-center"
+                                            uk-switcher="animation: uk-animation-fade">
+                                            <li><a href="#">Log In</a></li>
+                                            <li><a href="#">Sign Up</a></li>
+                                            <li class="uk-hidden">Forgot Password?</li>
+                                        </ul>
+                                        <ul class="uk-switcher uk-margin">
+                                            <li>
+                                                <h3 class="uk-card-title uk-text-center">Welcome back!</h3>
+                                                <form action="/auth/login" method="post">
+                                                    <div class="uk-margin">
+                                                        <div class="uk-inline uk-width-1-1">
+                                                            <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                                            <input class="uk-input uk-form-large" type="text"
+                                                                   placeholder="Email address">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-margin">
+                                                        <div class="uk-inline uk-width-1-1">
+                                                            <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                                            <input class="uk-input uk-form-large" type="password"
+                                                                   placeholder="Password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-margin uk-text-right@s uk-text-center uk-text-small">
+                                                        <a href="#" uk-switcher-item="2">Forgot Password?</a>
+                                                    </div>
+                                                    <div class="uk-margin">
+                                                        <button class="uk-button uk-button-primary uk-button-large uk-width-1-1">
+                                                            Login
+                                                        </button>
+                                                    </div>
+                                                    <div class="uk-text-small uk-text-center">
+                                                        Not registered? <a href="#" uk-switcher-item="0">Create an
+                                                        account</a>
+                                                    </div>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <h3 class="uk-card-title uk-text-center">Sign up today. It's
+                                                    free!</h3>
+                                                <form>
+                                                    <div class="uk-margin">
+                                                        <div class="uk-inline uk-width-1-1">
+                                                            <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                                            <input class="uk-input uk-form-large" type="text"
+                                                                   placeholder="First and last name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-margin">
+                                                        <div class="uk-inline uk-width-1-1">
+                                                            <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                                            <input class="uk-input uk-form-large" type="text"
+                                                                   placeholder="Email address">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-margin">
+                                                        <div class="uk-inline uk-width-1-1">
+                                                            <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                                            <input class="uk-input uk-form-large" type="password"
+                                                                   placeholder="Set a password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                                                        <label><input class="uk-checkbox" type="checkbox"> I agree
+                                                            the
+                                                            Terms and Conditions.</label>
+                                                    </div>
+                                                    <div class="uk-margin">
+                                                        <button class="uk-button uk-button-primary uk-button-large uk-width-1-1">
+                                                            Register
+                                                        </button>
+                                                    </div>
+                                                    <div class="uk-text-small uk-text-center">
+                                                        Already have an account? <a href="#" uk-switcher-item="1">Log
+                                                        in</a>
+                                                    </div>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <h3 class="uk-card-title uk-text-center">Forgot your password?</h3>
+                                                <p class="uk-text-center uk-width-medium@s uk-margin-auto">Enter
+                                                    your
+                                                    email address and we will send you a link to reset your
+                                                    password.</p>
+                                                <form>
+                                                    <div class="uk-margin">
+                                                        <div class="uk-inline uk-width-1-1">
+                                                            <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                                            <input class="uk-input uk-form-large" type="text"
+                                                                   placeholder="Email address">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-margin">
+                                                        <button class="uk-button uk-button-primary uk-button-large uk-width-1-1">
+                                                            Send Email
+                                                        </button>
+                                                    </div>
+                                                    <div class="uk-text-small uk-text-center">
+                                                        <a href="#" uk-switcher-item="1">Back to login</a>
+                                                    </div>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- For Night mode -->
+<script>
+    (function (window, document, undefined) {
+        'use strict';
+        if (!('localStorage' in window)) return;
+        var nightMode = localStorage.getItem('gmtNightMode');
+        if (nightMode) {
+            document.documentElement.className += ' night-mode';
+        }
+    })(window, document);
+
+
+    (function (window, document, undefined) {
+
+        'use strict';
+
+        // Feature test
+        if (!('localStorage' in window)) return;
+
+        // Get our newly insert toggle
+        var nightMode = document.querySelector('#night-mode');
+        if (!nightMode) return;
+
+        // When clicked, toggle night mode on or off
+        nightMode.addEventListener('click', function (event) {
+            event.preventDefault();
+            document.documentElement.classList.toggle('night-mode');
+            if (document.documentElement.classList.contains('night-mode')) {
+                localStorage.setItem('gmtNightMode', true);
+                return;
+            }
+            localStorage.removeItem('gmtNightMode');
+        }, false);
+
+    })(window, document);
+</script>
+
+<!-- javaScripts
+            ================================================== -->
+<script src="../assets/js/framework.js"></script>
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../assets/js/simplebar.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "theconnectApp": {
+    "FriendType": {
+      "null": "",
+      "REQUEST": "REQUEST",
+      "FRIEND": "FRIEND",
+      "BEST_FRIEND": "BEST_FRIEND",
+      "FOLLOW": "FOLLOW",
+      "BLOCKED": "BLOCKED"
+    }
+  }
+}

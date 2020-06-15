@@ -1,0 +1,43 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="userInfo">
+            <h2><span jhiTranslate="theconnectApp.userInfo.detail.title">User Info</span> {{userInfo.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="theconnectApp.userInfo.dob">Dob</span></dt>
+                <dd>
+                    <span>{{userInfo.dob}}</span>
+                </dd>
+                <dt><span jhiTranslate="theconnectApp.userInfo.gender">Gender</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'theconnectApp.Gender.' + userInfo.gender}}">{{userInfo.gender}}</span>
+                </dd>
+                <dt><span jhiTranslate="theconnectApp.userInfo.age">Age</span></dt>
+                <dd>
+                    <span>{{userInfo.age}}</span>
+                </dd>
+                <dt><span jhiTranslate="theconnectApp.userInfo.introduce">Introduce</span></dt>
+                <dd>
+                    <span>{{userInfo.introduce}}</span>
+                </dd>
+                <dt><span jhiTranslate="theconnectApp.userInfo.phone">Phone</span></dt>
+                <dd>
+                    <span>{{userInfo.phone}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/user-info', userInfo.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

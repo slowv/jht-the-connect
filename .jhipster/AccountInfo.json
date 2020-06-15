@@ -1,0 +1,82 @@
+{
+    "name": "AccountInfo",
+    "fields": [
+        {
+            "fieldName": "dob",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "gender",
+            "fieldType": "Gender",
+            "fieldValues": "MALE,FEMALE,OTHER"
+        },
+        {
+            "fieldName": "age",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "introduce",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        },
+        {
+            "fieldName": "phone",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "unique",
+                "required",
+                "minlength",
+                "maxlength",
+                "pattern"
+            ],
+            "fieldValidateRulesMinlength": 10,
+            "fieldValidateRulesMaxlength": 10,
+            "fieldValidateRulesPattern": "^0[0-9]{8}$"
+        },
+        {
+            "fieldName": "firstName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lastName",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "image",
+            "otherEntityRelationshipName": "accountInfo",
+            "relationshipName": "image",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "address",
+            "otherEntityRelationshipName": "accountInfo",
+            "relationshipName": "address"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "accountTC",
+            "otherEntityRelationshipName": "accountInfo",
+            "relationshipName": "accountTC",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20200614075706",
+    "javadoc": "The UserInfo entity.\\n@author SlowV true hipster",
+    "entityTableName": "account_info",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

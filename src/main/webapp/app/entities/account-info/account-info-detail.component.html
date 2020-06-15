@@ -1,0 +1,57 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="accountInfo">
+            <h2><span jhiTranslate="theconnectApp.accountInfo.detail.title">Account Info</span> {{accountInfo.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="theconnectApp.accountInfo.dob">Dob</span></dt>
+                <dd>
+                    <span>{{accountInfo.dob}}</span>
+                </dd>
+                <dt><span jhiTranslate="theconnectApp.accountInfo.gender">Gender</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'theconnectApp.Gender.' + accountInfo.gender}}">{{accountInfo.gender}}</span>
+                </dd>
+                <dt><span jhiTranslate="theconnectApp.accountInfo.age">Age</span></dt>
+                <dd>
+                    <span>{{accountInfo.age}}</span>
+                </dd>
+                <dt><span jhiTranslate="theconnectApp.accountInfo.introduce">Introduce</span></dt>
+                <dd>
+                    <span>{{accountInfo.introduce}}</span>
+                </dd>
+                <dt><span jhiTranslate="theconnectApp.accountInfo.phone">Phone</span></dt>
+                <dd>
+                    <span>{{accountInfo.phone}}</span>
+                </dd>
+                <dt><span jhiTranslate="theconnectApp.accountInfo.firstName">First Name</span></dt>
+                <dd>
+                    <span>{{accountInfo.firstName}}</span>
+                </dd>
+                <dt><span jhiTranslate="theconnectApp.accountInfo.lastName">Last Name</span></dt>
+                <dd>
+                    <span>{{accountInfo.lastName}}</span>
+                </dd>
+                <dt><span jhiTranslate="theconnectApp.accountInfo.image">Image</span></dt>
+                <dd>
+                    <div *ngIf="accountInfo.imageId">
+                        <a [routerLink]="['/image', accountInfo.imageId, 'view']">{{accountInfo.imageId}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/account-info', accountInfo.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

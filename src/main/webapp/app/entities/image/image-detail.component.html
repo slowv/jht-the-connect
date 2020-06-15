@@ -1,0 +1,43 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="image">
+            <h2><span jhiTranslate="theconnectApp.image.detail.title">Image</span> {{image.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="theconnectApp.image.url">Url</span></dt>
+                <dd>
+                    <span>{{image.url}}</span>
+                </dd>
+                <dt><span jhiTranslate="theconnectApp.image.createdAt">Created At</span></dt>
+                <dd>
+                    <span>{{image.createdAt}}</span>
+                </dd>
+                <dt><span jhiTranslate="theconnectApp.image.updatedAt">Updated At</span></dt>
+                <dd>
+                    <span>{{image.updatedAt}}</span>
+                </dd>
+                <dt><span jhiTranslate="theconnectApp.image.deletedAt">Deleted At</span></dt>
+                <dd>
+                    <span>{{image.deletedAt}}</span>
+                </dd>
+                <dt><span jhiTranslate="theconnectApp.image.status">Status</span></dt>
+                <dd>
+                    <span>{{image.status}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/image', image.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

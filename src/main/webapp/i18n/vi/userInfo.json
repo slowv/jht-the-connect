@@ -1,0 +1,26 @@
+{
+  "theconnectApp": {
+    "userInfo": {
+      "home": {
+        "title": "User Infos",
+        "createLabel": "Thêm mới một User Info",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật User Info",
+        "notFound": "No User Infos found"
+      },
+      "created": "Một User Info mới được tạo với định danh {{ param }}",
+      "updated": "Một User Info cập nhật với định danh {{ param }}",
+      "deleted": "Một User Info đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa User Info {{ id }}?"
+      },
+      "detail": {
+        "title": "User Info"
+      },
+      "dob": "Dob",
+      "gender": "Gender",
+      "age": "Age",
+      "introduce": "Introduce",
+      "phone": "Phone"
+    }
+  }
+}

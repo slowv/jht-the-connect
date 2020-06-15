@@ -1,0 +1,40 @@
+{
+    "name": "Address",
+    "fields": [
+        {
+            "fieldName": "location",
+            "javadoc": "location",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "district",
+            "otherEntityRelationshipName": "address",
+            "relationshipName": "district",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "accountInfo",
+            "otherEntityRelationshipName": "address",
+            "relationshipName": "accountInfo",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200613093543",
+    "javadoc": "The Address entity.\\n@author SlowV true hipster",
+    "entityTableName": "address",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

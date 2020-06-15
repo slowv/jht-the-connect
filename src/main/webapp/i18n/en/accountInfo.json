@@ -1,0 +1,31 @@
+{
+  "theconnectApp": {
+    "accountInfo": {
+      "home": {
+        "title": "Account Infos",
+        "createLabel": "Create a new Account Info",
+        "createOrEditLabel": "Create or edit a Account Info",
+        "notFound": "No Account Infos found"
+      },
+      "created": "A new Account Info is created with identifier {{ param }}",
+      "updated": "A Account Info is updated with identifier {{ param }}",
+      "deleted": "A Account Info is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Account Info {{ id }}?"
+      },
+      "detail": {
+        "title": "Account Info"
+      },
+      "dob": "Dob",
+      "gender": "Gender",
+      "age": "Age",
+      "introduce": "Introduce",
+      "phone": "Phone",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "image": "Image",
+      "address": "Address",
+      "accountTC": "Account TC"
+    }
+  }
+}

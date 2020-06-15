@@ -1,0 +1,148 @@
+/**
+ * The Country entity.
+ * @author SlowV true hipster
+ */
+entity Country {
+    id Long 
+    /** name */
+    name String unique required
+}
+
+/**
+ * The City entity.
+ * @author SlowV true hipster
+ */
+entity City {
+    /** name */
+    name String required
+}
+
+
+/**
+ * The District entity.
+ * @author SlowV true hipster
+ */
+entity District {
+    /** name */
+    name String required
+}
+
+/**
+ * The Address entity.
+ * @author SlowV true hipster
+ */
+entity Address {
+    /** location */
+    location String required
+}
+
+/**
+ * The UserInfo entity.
+ * @author SlowV true hipster
+ */
+entity AccountInfo (accountInfo) {
+    dob Instant required
+    gender Gender
+    age Integer
+    introduce TextBlob
+    phone String unique required minlength(10) maxlength(10) pattern(/^0[0-9]{8}$/)
+    firstName String 
+    lastName String
+}
+/**
+ * The AccountTC entity.
+ * @author A true hipster
+ */
+entity AccountTC(accountTc) {
+    email String unique required
+    password String required
+    status Integer required
+    createdAt Instant required
+    updatedAt Instant required
+    deletedAt Instant required
+}
+
+/**
+ * The Image entity.
+ * @author A true hipster
+ */
+entity Image {
+    url String required
+    createdAt Instant required
+    updatedAt Instant required
+    deletedAt Instant 
+    status Integer required
+}
+
+/**
+ * The Friend entity.
+ * @author A true hipster
+ */
+entity Friend {
+    dateIsFriend Instant
+    type FriendType required
+}
+
+
+/**
+ * The Group entity.
+ * @author A true hipster
+ */
+entity Group (groupz){
+    name String required unique
+    type GroupdType
+    createdAt Instant required
+    updatedAt Instant required
+    deletedAt Instant 
+    status Integer required
+}
+
+
+enum GroupdType {
+    CHAT,
+    PAGE
+}
+
+enum FriendType {
+    REQUEST,
+    FRIEND,
+    BEST_FRIEND,
+    FOLLOW,
+    BLOCKED
+}
+
+
+
+enum Gender {
+    MALE,
+    FEMALE,
+    OTHER
+}
+
+/**
+ * One to many relationship.
+ */
+relationship OneToMany {
+    Country to City
+    City to District
+    District to Address
+    AccountInfo to Address
+}
+
+
+
+/**
+ * One to one relationship.
+ */
+relationship OneToOne {
+    AccountTC to AccountInfo
+    AccountInfo to Image
+    Friend{sender} to AccountTC
+    Friend{receiver} to AccountTC
+}
+
+
+
+dto * with mapstruct
+service * with serviceImpl
+paginate * with pagination

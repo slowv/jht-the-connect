@@ -1,0 +1,31 @@
+{
+  "theconnectApp": {
+    "accountInfo": {
+      "home": {
+        "title": "Account Infos",
+        "createLabel": "Thêm mới một Account Info",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Account Info",
+        "notFound": "No Account Infos found"
+      },
+      "created": "Một Account Info mới được tạo với định danh {{ param }}",
+      "updated": "Một Account Info cập nhật với định danh {{ param }}",
+      "deleted": "Một Account Info đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Account Info {{ id }}?"
+      },
+      "detail": {
+        "title": "Account Info"
+      },
+      "dob": "Dob",
+      "gender": "Gender",
+      "age": "Age",
+      "introduce": "Introduce",
+      "phone": "Phone",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "image": "Image",
+      "address": "Address",
+      "accountTC": "Account TC"
+    }
+  }
+}
